@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthdays & Anniversaries</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .scroll-container {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      background: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .scrolling-list {
+      display: inline-block;
+      position: absolute;
+      animation: scrollUp 20s linear infinite;
+    }
+
+    .scrolling-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .scrolling-list li {
+      padding: 5px 0;
+    }
+
+    @keyframes scrollUp {
+      0% { top: 100%; }
+      100% { top: -100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-container">
+    <div class="scrolling-list">
+      <ul>
+        <li>🎂 John Smith - June 18 (Birthday)</li>
+        <li>🎉 Lisa Tran - June 20 (Anniversary)</li>
+        <li>🎂 Omar Rami - June 22 (Birthday)</li>
+        <li>🎉 Marie Chen - June 25 (Anniversary)</li>
+        <li>🎂 Ethan Zhao - June 28 (Birthday)</li>
+        <li>🎉 Nina Brooks - June 30 (Anniversary)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
