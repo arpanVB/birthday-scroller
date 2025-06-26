@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Birthdays & Anniversaries</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Team Terminal Page</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .scroll-container {
-      width: 420px;
-      height: 400px;
-      position: relative;
-      background: #f9f9f9;
-      border: 2px solid #c4d7c4;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .month-header {
-      background-color: #d9f2d9;
-      color: #1a4d29;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 12px 20px;
-      border-bottom: 1px solid #c4d7c4;
-      position: relative;
-      z-index: 2;
-    }
-
-    .scrolling-list {
-      position: absolute;
-      top: 48px; /* below the fixed June banner */
-      left: 0;
-      right: 0;
-      padding: 20px;
-      animation: scrollDown 25s linear infinite;
-    }
-
-    .scrolling-list ul {
-      list-style: none;
+      font-family: 'Courier New', monospace;
+      background-color: #111;
+      color: #33ff88;
       padding: 0;
-      margin: 0;
     }
-
-    .scrolling-list li {
-      padding: 6px 0;
-      font-size: 16px;
-      color: #2b3d2b;
+    .terminal {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
     }
-
-    .section-title {
+    .title {
+      font-size: 28px;
       font-weight: bold;
-      font-size: 18px;
-      margin: 12px 0 6px;
-      color: #1a4d29;
+      color: #0ff;
+      margin-bottom: 20px;
+      text-align: center;
     }
-
-    @keyframes scrollDown {
-      0% { top: -100%; }
-      100% { top: 100%; }
+    .banner {
+      background: linear-gradient(to right, #003300, #002200);
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+      border-bottom: 2px solid #0f0;
+    }
+    .banner h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .banner p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .block {
+      margin: 30px 0;
+      background: #000;
+      border: 1px solid #0f0;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    .quote {
+      color: #0f0;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    .ascii {
+      color: #0f0;
+      text-align: center;
+      margin-top: 30px;
+      white-space: pre;
     }
   </style>
 </head>
 <body>
-  <div class="scroll-container">
-    <div class="month-header">June</div>
-    <div class="scrolling-list">
-      <ul>
-        <li class="section-title">🎂 Birthdays</li>
-        <li>John Smith</li>
-        <li>Alice Kim</li>
-        <li>David Chen</li>
-        <li>Sara Lopez</li>
-        <li>Kevin Patel</li>
-        <li>Mina Choi</li>
-        <li>Tom Nguyen</li>
+  <div class="banner">
+    <h1>IT</h1>
+    <p>The IT Team empowers the organization with reliable technology, secure systems, and responsive support.<br>
+       Whether resolving daily tech issues or driving long-term infrastructure projects, we're here to keep your digital workspace running smoothly.</p>
+  </div>
 
-        <li class="section-title">🎉 Anniversaries</li>
-        <li>Lisa Tran</li>
-        <li>Omar Rami</li>
-        <li>Marie Chen</li>
-        <li>Paul Adams</li>
-        <li>Rita Shah</li>
-        <li>George Lee</li>
-        <li>Nina Brooks</li>
-      </ul>
+  <div class="terminal">
+    <div class="title">🧠 Fun Zone – Where IT Gets Nerdy</div>
+
+    <div class="block">
+      > Developer Mood: <strong>200 OK</strong><br>
+      > Uptime Today: <strong>99.999%</strong><br>
+      > Coffee Intake: <strong>Overflowing ☕</strong><br>
+      > Ping to Printer: <strong>Timed out... again</strong><br>
+      > Favorite Command This Week: <code>Get-Help -Full</code><br>
+      > Poll: <em>Spaces vs Tabs?</em> Vote in #dev-chat 🗳️
+      <div class="quote">
+        "Code is like humor. When you have to explain it, it’s bad." – Cory House
+      </div>
+    </div>
+
+    <div class="ascii">
+ _____ _____ _____ <br>
+|  _  |     |  |  |<br>
+|     | | | |    -|<br>
+|__|__|_|_|_|__|__|<br>
     </div>
   </div>
 </body>
